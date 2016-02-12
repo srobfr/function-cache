@@ -1,6 +1,6 @@
 {
   "name": "cache-function",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Caches function calls results",
   "main": "index.js",
   "scripts": {
