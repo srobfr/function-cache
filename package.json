@@ -18,5 +18,13 @@
   "homepage": "https://github.com/srobfr/cache-function#readme",
   "keywords": [
     "cache"
-  ]
+  ],
+  "dependencies": {
+    "farmhash": "^1.1.0",
+    "lodash": "^4.3.0",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
 }
