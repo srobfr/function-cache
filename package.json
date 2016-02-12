@@ -1,7 +1,7 @@
 {
   "name": "cache-function",
   "version": "1.0.0",
-  "description": "Cache function calls results",
+  "description": "Caches function calls results",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
