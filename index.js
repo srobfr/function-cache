@@ -4,6 +4,7 @@ var _ = require("lodash");
 var os = require("os");
 var farmhash = require('farmhash');
 var path = require('path');
+var mkdirParents = require('mkdir-parents');
 
 var storage = {};
 
@@ -15,7 +16,7 @@ function cache(func, options) {
         serializer: JSON.stringify,
         unserializer: JSON.parse,
         hasher: farmhash.hash32,
-        tmpPrefix: "cache-function"
+        tmpPrefix: "function-cache"
     };
 
     _.assignIn(defaults, options);
@@ -42,8 +43,13 @@ function cache(func, options) {
                 .then(function(result) {
                     if (options.useMemoryCache) storage[hash] = result;
                     if (options.useFileCache) {
-                        fs.writeFile(p, options.serializer(result), function() {
-
+                        var dir = path.dirname(p);
+                        // On crée le dossier s'il n'existe pas.
+                        mkdirParents(dir, 0777, function (err) {
+                            if (err) throw new Error(err);
+                            fs.writeFile(p, options.serializer(result), function(err) {
+                                if(err) throw new Error(err);
+                            });
                         });
                     }
 
