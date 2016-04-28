@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/srobfr/cache-function.git"
+    "url": "git+https://github.com/srobfr/function-cache.git"
   },
   "author": "Simon Robert",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/srobfr/cache-function/issues"
+    "url": "https://github.com/srobfr/function-cache/issues"
   },
-  "homepage": "https://github.com/srobfr/cache-function#readme",
+  "homepage": "https://github.com/srobfr/function-cache#readme",
   "keywords": [
     "cache"
   ],
