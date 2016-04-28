@@ -1,15 +1,15 @@
-# cache-function
+# function-cache
 Cache serializable function calls results.
 
 This module uses Promises (provided by [Q](https://www.npmjs.com/package/q)).
 
 ## Installation
 
-    npm install --save cache-function
+    npm install --save function-cache
 
 ## Usage
 
-    var cache = require("cache-function");
+    var cache = require("function-cache");
     
     function foo(param) {
         console.log("foo has been called.");
@@ -42,7 +42,7 @@ The `cache` function can take a second parameter :
         serializer: JSON.stringify,
         unserializer: JSON.parse,
         hasher: farmhash.hash32,
-        tmpPrefix: "cache-function"
+        tmpPrefix: "function-cache"
     });
 
 ### useMemoryCache
@@ -59,7 +59,7 @@ Defaults to `os.tmpdir()`.
 
 ### tmpPrefix
 This is a prefix used in cache files names.
-Defaults to `"cache-function"`.
+Defaults to `"function-cache"`.
 
 ### hasher
 A synchronous function to generate unique hash from given string.
