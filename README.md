@@ -72,7 +72,3 @@ Defaults to `JSON.stringify`.
 ### unserializer
 A synchronous function to unserialize cached function arguments and result.
 Defaults to `JSON.parse`.
-
-### hasher
-A synchronous function to generate unique hash from given string.
-Defaults to `farmhash.hash32`.
