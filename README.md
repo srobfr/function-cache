@@ -1,4 +1,4 @@
-# function-cache
+# function-cache  [![Build Status](https://travis-ci.org/srobfr/function-cache.svg?branch=master)](https://travis-ci.org/srobfr/function-cache)
 Cache serializable function calls results.
 
 This module uses Promises (provided by [Q](https://www.npmjs.com/package/q)).
