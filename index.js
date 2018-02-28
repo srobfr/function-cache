@@ -2,7 +2,7 @@ var fs = require("fs");
 var Q = require("q");
 var _ = require("lodash");
 var os = require("os");
-var farmhash = require('farmhash');
+var stringHash = require('string-hash');
 var path = require('path');
 var mkdirParents = require('mkdir-parents');
 
@@ -15,7 +15,7 @@ function cache(func, options) {
         useFileCache: true,
         serializer: JSON.stringify,
         unserializer: JSON.parse,
-        hasher: farmhash.hash32,
+        hasher: stringHash,
         tmpPrefix: "function-cache"
     };
 

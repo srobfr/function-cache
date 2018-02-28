@@ -63,7 +63,7 @@ Defaults to `"function-cache"`.
 
 ### hasher
 A synchronous function to generate unique hash from given string.
-Defaults to `farmhash.hash32`.
+Defaults to `string-hash`.
  
 ### serializer
 A synchronous function to serialize function arguments and result for cache storage.

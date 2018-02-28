@@ -20,10 +20,10 @@
     "cache"
   ],
   "dependencies": {
-    "farmhash": "^1.1.0",
     "lodash": "^4.3.0",
     "mkdir-parents": "0.0.2",
-    "q": "^1.4.1"
+    "q": "^1.4.1",
+    "string-hash": "^1.1.3"
   },
   "devDependencies": {
     "mocha": "^2.4.5"
