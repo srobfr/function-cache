@@ -41,7 +41,7 @@ The `cache` function can take a second parameter :
         useFileCache: true,
         serializer: JSON.stringify,
         unserializer: JSON.parse,
-        hasher: farmhash.hash32,
+        hasher: require('string-hash'),
         tmpPrefix: "function-cache"
     });
 
