@@ -8,7 +8,7 @@ This module uses Promises (provided by [Q](https://www.npmjs.com/package/q)).
     npm install --save function-cache
 
 ## Usage
-
+```js
     var cache = require("function-cache");
     
     function foo(param) {
@@ -30,11 +30,12 @@ This module uses Promises (provided by [Q](https://www.npmjs.com/package/q)).
         return cachedFoo("Plop"); // Prints "foo has been called." because no cache is available yet for this argument.
     })
     .done();
+   ```
 
 ## Options
 
 The `cache` function can take a second parameter :
-
+```js
     var cachedFoo = cache(foo, {
         tmpDir: os.tmpdir(),
         useMemoryCache: true,
@@ -44,7 +45,7 @@ The `cache` function can take a second parameter :
         hasher: require('string-hash'),
         tmpPrefix: "function-cache"
     });
-
+```
 ### useMemoryCache
 If set to true, a memory cache is used.
 Defaults to `true`.
